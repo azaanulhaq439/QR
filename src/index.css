@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
+  }
+
+  .section-title {
+    @apply text-3xl sm:text-4xl font-bold text-white mb-12;
+  }
+
+  .card {
+    @apply bg-secondary rounded-lg p-6 border border-slate-700 hover:border-accent transition-colors duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-accent hover:bg-accent-hover text-white px-6 py-2.5 rounded-lg font-medium transition-colors duration-300;
+  }
+
+  .btn-secondary {
+    @apply border border-accent text-accent hover:bg-accent/10 px-6 py-2.5 rounded-lg font-medium transition-colors duration-300;
+  }
+
+  .input-field {
+    @apply w-full bg-secondary border border-slate-700 rounded-lg px-4 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:border-accent transition-colors duration-300;
+  }
+
+  .home-img {
+    visibility: visible;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: all 2s cubic-bezier(0.5, 0, 0, 1) 0.2s, opacity 2s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0.2s;
+  }
+
+  .home-img img {
+    @apply w-full h-full object-contain;
+    width: 80vw;
+    max-width: 400px;
+    border-radius: 50%;
+    animation: floatImage 4s ease-in-out infinite;
+  }
+
+  /* Mobile: Extra Small (< 640px) */
+  @media (min-width: 0px) {
+    .home-img img {
+      width: 80vw;
+      max-width: 280px;
+    }
+  }
+
+  /* Small Tablets (640px - 768px) */
+  @media (min-width: 640px) {
+    .home-img img {
+      width: 70vw;
+      max-width: 350px;
+    }
+  }
+
+  /* Medium Tablets (768px - 1024px) */
+  @media (min-width: 768px) {
+    .home-img img {
+      width: 60vw;
+      max-width: 400px;
+    }
+  }
+
+  /* Large Tablets (1024px - 1280px) */
+  @media (min-width: 1024px) {
+    .home-img img {
+      width: 50vw;
+      max-width: 450px;
+    }
+  }
+
+  /* Desktop (1280px+) */
+  @media (min-width: 1280px) {
+    .home-img img {
+      width: 25vw;
+      max-width: 500px;
+    }
+  }
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
