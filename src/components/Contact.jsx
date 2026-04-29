@@ -78,7 +78,7 @@ export default function Contact() {
               <p className="text-sm text-slate-400 mb-4 uppercase tracking-wide">Connect on</p>
               <div className="flex gap-4">
                 <a
-                  href="https://www.linkedin.com/in/azaan-ul-haq-b0609a350/"
+                  href="https://www.linkedin.com/in/azaan-ul-haq/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center text-accent hover:bg-accent hover:text-white transition-colors"
