@@ -90,7 +90,7 @@ export default function Education() {
                     <span className="text-xs text-accent font-medium whitespace-nowrap">{cert.date}</span>
                   </div>
                   <p className="text-slate-300 font-medium mb-2">{cert.issuer}</p>
-                  <p className="text-slate-500 text-xs">ID: {cert.credentialId}</p>
+                  {/* <p className="text-slate-500 text-xs">ID: {cert.credentialId}</p> */}
                 </div>
               ))}
             </div>
