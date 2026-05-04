@@ -5,9 +5,9 @@ export default function Experience() {
   const experiences = [
     {
       title: 'Science & Engineering Associate',
-      company: 'UBL (United Breweries Limited)',
+      company: 'UBL (United Bank Limited)',
       period: '2025 – Present',
-      location: 'Pakistan',
+      location: 'Islamabad, Pakistan',
       highlights: [
         'Agile product delivery using Jira & Confluence workflows',
         'User story creation and requirements analysis',
@@ -19,9 +19,9 @@ export default function Experience() {
     },
     {
       title: 'IT Officer',
-      company: 'Ezdaan',
+      company: 'Ezdaan Associates SMC Pvt Ltd',
       period: '2024 – 2025',
-      location: 'Pakistan',
+      location: 'Islamabad, Pakistan',
       highlights: [
         'IT infrastructure management and system administration',
         'Network troubleshooting and technical support',
@@ -33,9 +33,9 @@ export default function Experience() {
     },
     {
       title: 'MERN Stack Developer',
-      company: 'Actim Solutions',
+      company: 'Actim Solutions Pvt Ltd',
       period: '2023 – 2024',
-      location: 'Remote',
+      location: 'Islamabad, Pakistan',
       highlights: [
         'Full-stack development with React, Node.js, and MongoDB',
         'REST API design and implementation',
