@@ -4,7 +4,7 @@ import { FaGraduationCap, FaAward } from 'react-icons/fa'
 export default function Education() {
   const education = [
     {
-      degree: 'Bachelor of Science in Computer Science',
+      degree: "Bachelor's in Computer Science",
       institution: 'Abdul Wali Khan University',
       period: '2020 – 2024',
       location: 'Mardan, Pakistan',
@@ -23,26 +23,23 @@ export default function Education() {
     {
       title: 'Cyber Threat Management',
       issuer: 'Cisco Networking Academy',
-      date: '2023',
-      credentialId: 'CN-CYB-001'
+      date: '2025',
+    },
+    {
+      title: 'IT Specialist - JavaScript',
+      issuer: 'Pearson Vue',
+      date: '2024',
     },
     {
       title: 'Introduction to Cybersecurity',
       issuer: 'Cisco Networking Academy',
-      date: '2023',
-      credentialId: 'CN-CYB-002'
+      date: '2025',
     },
-    {
-      title: 'Java Programming',
-      issuer: 'Coursera',
-      date: '2022',
-      credentialId: 'JAVA-2022-001'
-    },
+    
     {
       title: 'Full Stack Development',
       issuer: 'NAVTTC (National Vocational & Technical Training Commission)',
-      date: '2023',
-      credentialId: 'NAVTTC-FS-2023'
+      date: '2024',
     }
   ]
 
